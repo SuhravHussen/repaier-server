@@ -57,7 +57,7 @@ client.connect(err =>{
         const newAdmin = req.body;      
         adminCollection.insertOne(newAdmin)
         .then(result=>{
-          res.send(result.insertedCount>0)
+            res.send(result.insertedCount>0)
         })
       })
 
